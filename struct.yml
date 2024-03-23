@@ -1,0 +1,41 @@
+--- # Starting
+
+# working with key values pairs
+
+key_name:
+key name:
+'keyname':
+key.name:
+5.3:
+
+# Data Types
+ # Scalar type        # Collection Types
+
+ #datetime
+ #float
+ #int
+ #bool
+ #null
+ #str
+
+ # MAPs in yaml
+user:
+      first_name: Hamza
+      last_name: Ghaffar
+
+# list
+
+users:
+  -John Doe
+  - Hamza
+  - Ali
+  - 53.11
+
+app-config:
+  retry_count: !!float 5
+  timeout_ms: 1500
+  version: 1.0
+
+
+
+... #Ending

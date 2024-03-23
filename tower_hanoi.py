@@ -1,4 +1,4 @@
-# Write code for tower of Hanoi with logical_example no 1
+# Write code for tower of Hanoi with logical_example no 1 --in this case Pole A=Source Pole B=Helping Pole C=Destination
 def TOH(n_o_disk, Source, Dest, Helper):
     # first we need to check our base cases
     if n_o_disk == 0:
@@ -8,13 +8,11 @@ def TOH(n_o_disk, Source, Dest, Helper):
         print(f'Move disk {n_o_disk} from {Source} Pole to {Dest}')
         # if base case matches so our programme return and not process further
         return
+
     TOH(n_o_disk-1,Source,Helper,Dest)
     print(f'Move disk {n_o_disk} from {Source} Pole to {Dest}')
-    TOH(n_o_disk - 1, Helper,Dest,Source)
+    TOH(n_o_disk-1, Helper,Dest,Source)
 
 
-
-
-
-TOH(3,"Pole A", "Pole B","Pole C")
+TOH(3,"Pole A", "Pole C","Pole B")
 
